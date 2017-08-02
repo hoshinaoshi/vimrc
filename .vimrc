@@ -66,19 +66,7 @@ set nocompatible
 if has('vim_starting')
   filetype plugin off 
   filetype indent off 
-  execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
 endif
-
-call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'git://github.com/kien/ctrlp.vim.git'
-NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
-NeoBundle 'git://github.com/scrooloose/nerdtree.git'
-NeoBundle 'git://github.com/scrooloose/syntastic.git'
-NeoBundle 'git://github.com/Shougo/vimproc.vim'
-NeoBundle 'git://github.com/Shougo/vimshell.vim'
-call neobundle#end()
 
 let g:syntastic_mode_map = { 'mode': 'passive',
             \ 'passive_filetypes': ['ruby'] }
