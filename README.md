@@ -1,5 +1,5 @@
 # vim-plug
-(ミニマリストの僕にはvim-plugが性に合っている)[https://qiita.com/kentarosasaki/items/86c64316c0494c89117a]
+[ミニマリストの僕にはvim-plugが性に合っている](https://qiita.com/kentarosasaki/items/86c64316c0494c89117a)
 
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
