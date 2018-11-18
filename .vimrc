@@ -17,6 +17,9 @@ set history=50
 set ruler
 set vb t_vb= "ビープ音無効化
 
+set colorcolumn=120
+highlight ColorColumn ctermbg=white
+
 " 全角スペースの表示
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=darkgray
 match ZenkakuSpace /　/
