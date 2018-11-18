@@ -68,11 +68,22 @@ if has('vim_starting')
   filetype indent off 
 endif
 
-let g:syntastic_mode_map = { 'mode': 'passive',
-            \ 'passive_filetypes': ['ruby'] }
-let g:syntastic_ruby_checkers = ['rubocop']
-
-
 syntax on
 filetype plugin on
 filetype indent on
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'othree/javascript-libraries-syntax.vim'
+Plug 'othree/es.next.syntax.vim'
+Plug 'Valloric/YouCompleteMe'
+
+call plug#end()
+
+" for YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '${HOME}/.ycm_extra_conf.py'
+let g:ycm_auto_trigger = 1
+let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_autoclose_preview_window_after_insertion = 1
+set splitbelow
