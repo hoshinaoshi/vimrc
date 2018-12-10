@@ -85,6 +85,8 @@ Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 execute pathogen#infect()
+"入れたもの
+"https://github.com/leafgarland/typescript-vim
 
 " for YouCompleteMe
 let g:ycm_global_ycm_extra_conf = '${HOME}/.ycm_extra_conf.py'
