@@ -80,16 +80,16 @@ call plug#begin('~/.vim/plugged')
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/es.next.syntax.vim'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 
 call plug#end()
 
 execute pathogen#infect()
-"入れたもの
-"https://github.com/leafgarland/typescript-vim
+"https://github.com/slim-template/vim-slim
+filetype plugin indent on
 
 " for YouCompleteMe
-let g:ycm_global_ycm_extra_conf = '${HOME}/.ycm_extra_conf.py'
-let g:ycm_auto_trigger = 1
-let g:ycm_min_num_of_chars_for_completion = 2
-let g:ycm_autoclose_preview_window_after_insertion = 1
+"let g:ycm_global_ycm_extra_conf = '${HOME}/.ycm_extra_conf.py'
+"let g:ycm_auto_trigger = 1
+"let g:ycm_min_num_of_chars_for_completion = 2
+"let g:ycm_autoclose_preview_window_after_insertion = 1
