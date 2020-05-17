@@ -71,12 +71,13 @@ if has('vim_starting')
   filetype indent off 
 endif
 
-syntax on
 filetype plugin on
 filetype indent on
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'othree/es.next.syntax.vim'
@@ -93,3 +94,5 @@ filetype plugin indent on
 "let g:ycm_auto_trigger = 1
 "let g:ycm_min_num_of_chars_for_completion = 2
 "let g:ycm_autoclose_preview_window_after_insertion = 1
+set nowmnu
+set wildmode=longest:full
