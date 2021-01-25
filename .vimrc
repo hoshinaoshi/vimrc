@@ -32,7 +32,9 @@ if has("autocmd")
     \ if line("'\"") > 0 && line ("'\"") <= line("$") |
     \   exe "normal! g'\"" |
     \ endif
-  augroup END 
+  augroup END
+  "vim-jsx-typescriptのupdateの影響でimport文にハイライトが入ってしまったため対応
+  autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 endif
 
 if has("cscope") && filereadable("/usr/bin/cscope")
